@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travally</title>
+
+    <script src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
+
+    </script>
+    <style>
+        /* nav bar */
+        #container {
+            display: flex;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            gap: 80px;
+        }
+
+        #container>#nav>div>img {
+            width: 20%;
+           
+            margin-left: 20px;
+        }
+
+        #nav {
+            display: flex;
+            gap: 20px;
+
+   
+        }
+
+        /* #select1 {
+            border: none;
+            width: 128px;
+            font-size: 20px;
+            
+
+        } */
+
+        #nav2 {
+            display: flex;
+            gap: 70px;
+
+            padding-top: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        /* Search bar */
+        #Searchbar {
+            height: 330px;
+            width: 95%;
+            margin: auto;
+            border: 1px solid rgb(215, 215, 215);
+            border-radius: 10px;
+            margin-top: 50px;
+
+        }
+
+        #Searchbar>#Searchbar1 {
+            display: flex;
+            gap: 80px;
+            height: 80px;
+            width: 97%;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            margin: auto;
+        }
+
+        #Searchbar>#Searchbar1>div {
+            display: flex;
+            gap: 50px;
+            margin: auto;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+        }
+
+        #Searchbar2 {
+            height: 60px;
+            width: 92%;
+            margin-left: px;
+            text-decoration: none;
+            margin: auto;
+
+        }
+
+        #Searchbar2>input {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        #Searchbar>#Searchbar2 {
+
+
+            margin-top: 25px;
+            display: flex;
+            gap: 20px;
+
+            text-decoration: none;
+
+        }
+
+        #Searchbar3 {
+            height: auto;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            gap: 30px;
+            margin-top: 25px;
+            margin-left: 4%;
+            font-size: 20px;
+
+        }
+
+        #Searchbar4 {
+            height: 30px;
+            width: 10%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            margin-top: 15px;
+
+        }
+
+        #Searchbar4>#btn1 {
+            padding: 15px 50px 15px 50px;
+            border-radius: 9px;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(67, 67, 243);
+            color: white;
+            border: none;
+        }
+        #Searchbar4>#btn1:hover{
+            background-color: rgb(0, 29, 249);
+        }
+
+        /* rewardbar */
+        #rewardpage {
+
+            height: auto;
+            width: 95%;
+            margin: 90px auto;
+            border-radius: 10px;
+            color: white;
+            position: relative;
+        }
+
+        #rewardpage>img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        #bottom-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            color: white;
+
+            width: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            margin-left: 70px;
+
+        }
+
+        #bottom-up {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            width: 35%;
+            margin-left: 70px;
+            margin-bottom: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #bottom-btn {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            margin-left: 70px;
+            margin-bottom: 8%;
+            padding: 20px 15px 20px 15px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+            border: none;
+
+        }
+
+        /* QR page */
+        #Qrpage {
+            display: flex;
+            height: 430px;
+            width: 95%;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+           
+        }
+
+        #Qrpage>div{
+            height: 100%;
+            width: 70%;
+           
+           
+            
+
+        }
+           
+        #Qrpage>div>img{
+            width: 95%;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            
+        }
+        #Qrpage>#dis:nth-child(2){
+            width: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 30px;
+          
+           
+        }
+        #Qrpage>div:nth-child(3){
+            width: 20%;
+          
+        }
+        #Qrpage>#dis>input{
+            padding: 3%;
+            border-radius: 10px;
+        }
+        #Qrpage>div>#select2{
+            padding: 3%;
+            border-radius: 10px;
+        }
+        #Qrpage>div>button{
+            padding: 18px 35px 17px 35px;
+            border-radius: 10px;
+            color: white;
+            background-color: blue;
+            font-size: 20px;
+            border: none;
+        }
+    
+     
+        
+
+
+      
+
+        #getapp>#select2 {
+            padding: 15px 30px 15px 20px;
+
+        }
+        #suggetion{
+            height: 200px;
+            width: 30%;
+        
+            margin-left: 2.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+        <div id="nav">
+
+            <div>
+                <img src="./Updated.logo.jpg" alt="">
+            </div>
+            <!-- <select name="" id="select1">
+
+                <option value="More traval">More traval</option>
+                <option value="Stays">Stays</option>
+                <option value="Flights">Flights</option>
+                <option value="Cars">Cars</option>
+                <option value="Packages">Packages</option>
+                <option value="Holidays activities">Holidays activities</option>
+
+                <option value="Deals">Deals</option>
+                <option value="Groups & meetings">Groups & meetings</option>
+                <option value="Mobile">Mobile</option>
+            </select> -->
+
+
+
+        </div>
+
+        <div id="nav2">
+            <a href="">English</a>
+            <a href="">Support</a>
+            <a href="">Trips</a>
+            <a href="">Sign in</a>
+
+
+        </div>
+
+    </div>
+
+    <div id="Searchbar">
+        <div id="Searchbar1">
+            <div>
+                <a href="">Stays</a>
+                <a href="">Flights</a>
+                <a href="">Cars</a>
+                <a href="">Pakages</a>
+                <a href="">Things to do</a>
+
+            </div>
+        </div>
+
+        <div id="Searchbar2">
+            <input type="text" placeholder="Going to">
+            <input type="date" placeholder="Check-in">
+            <input type="date" placeholder="check-out">
+            <input type="text" placeholder="Travellers">
+        </div>
+
+        <div id="Searchbar3">
+
+            <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Biryani">
+                <label for="vehicle1"> Add a flight</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Biryani">
+                <label for="vehicle1"> Add a car</label><br>
+            </div>
+
+
+        </div>
+
+        <div id="Searchbar4">
+
+            <button id="btn1">Search</button>
+        </div>
+
+
+
+
+    </div>
+
+    <div id="rewardpage">
+
+
+        <img src="https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg" alt="">
+        <!-- <div id="bottom-left">Save instantly with Expedia Rewards</div> -->
+        <p id="bottom-left">Save instantly with Expedia Rewards</p>
+        <!-- <div id="bottom-up">You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of hotels. Terms may apply.</div> -->
+        <p id="bottom-up">You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of
+            hotels. Terms may apply.</p>
+        <button id="bottom-btn">See Member Prices</button>
+    </div>
+
+    <div id="Qrpage">
+
+        <div >
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" />
+        </div>
+
+        <div id="dis">
+            <h2>Our app takes you further</h2>
+            <p>When you book on the app you can save even more up to 20% on select hotels while earning double the
+                points with every booking. With these app deals you'll save even more on trips, and that means you can
+                take more trips, and manage it all on the go.</p>
+            <h3>Text yourself a download link for easy access</h3>
+            <select name="" id="select2">
+                <option value="">India +91</option>
+            </select>
+            <input type="number" placeholder="Number">
+            <button>Get the app</button>
+            <p>By providing your number, you agree to receive a one-time automated text message with a link to get the
+                app. Standard text message rates may apply.</p>
+        </div>
+
+        <div >
+            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_BNA_HP.png" />
+            <p>Scan the QR code</p>
+        </div>
+    </div>
+
+
+
+    <div id="suggetion">
+        <h1>Suggestions for you</h1>
+        <h3>Popular Pune stays</h3>
+        <p>These are the most-viewed stays in Pune.</p>
+    </div>
+
+</body>
+
+</html>
