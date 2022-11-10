@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+    <style>
+        form {
+            height: auto;
+            width: 20%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            padding: 3%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(auto);
+            gap: 20px;
+            margin-top: 90px;
+        }
+
+    
+       form>h3 {
+            text-align: center;
+        }
+        
+      
+        form>input{
+          width: 90%;
+          gap: 20px;
+          padding: 2%;
+          margin-bottom: 20px;
+        }
+        form>input[type="submit"]{
+           margin-left: 9px;
+            color: white;
+            background-color: blue;
+            border: none;
+           
+            padding: 10px 40px 10px 40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Login Page</h3>
+
+        <input id="email" type="email" placeholder="enter email">
+        <input id="pas" type="password" placeholder="enter password">
+        <input type="submit">
+
+    </form>
+    
+</body>
+</html>
+<script>
+     //last data
+     let data = JSON.parse(localStorage.getItem("userdata")) || [];
+    console.log(data);
+
+    let data1 = JSON.parse(localStorage.getItem("logindata")) || [];
+
+    document.querySelector("form").addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        let email1 = document.querySelector("#email").value;
+        let password1 = document.querySelector("#pas").value;
+
+        let obj1 = {
+            email1,
+            password1
+        }
+
+
+
+        data1.push(obj1);
+
+        localStorage.setItem("logindata", JSON.stringify(data1));
+
+        console.log(obj1);
+
+
+        // data.forEach(function (elem){
+        //     if(elem.email === obj1.email1 && elem.password === obj1.password1){
+        //         alert("successfull");
+        //         return -1;
+        //     }
+
+        //     else{
+        //         alert("Please enter correct email or password");
+        //         return -1;
+
+        //     }
+
+
+        // })
+        let flag = false;
+
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].email === obj1.email1 && data[i].password === obj1.password1) {
+                flag = true;
+                // alert("successfull");
+                // console.log("successfull")
+            }
+        }
+
+        if(flag == true)
+        alert("successfull");
+        else{
+                alert("Please enter correct email or password");
+                // console.log("Please enter correct email or password")
+                //   break;
+            }
+
+
+    });
+</script>
