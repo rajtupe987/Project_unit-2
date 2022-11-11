@@ -6,31 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supportpage</title>
     <style>
-         /* nav bar */
-         #container {
+     /* nav bar */
+     #container {
             display: flex;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            gap: 80px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+            gap: 320px;
         }
 
         #container>#nav>div>img {
-            width: 20%;
-           
+            width: 80%;
+
             margin-left: 20px;
         }
 
         #nav {
             display: flex;
-            gap: 20px;
+            gap: 1px;
+
+
+
         }
-        
-        /* #select1 {
+
+        #nav>div {
+            height: auto;
+            width: 50%;
+
+        }
+
+        #select1 {
             border: none;
             width: 128px;
             font-size: 20px;
-            
+            margin-left: 15px;
 
-        } */
+        }
 
         #nav2 {
             display: flex;
@@ -39,7 +48,13 @@
             padding-top: 35px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
+
         }
+
+        #container>#nav2>a {
+            color: black;
+        }
+
 
     </style>
 </head>
@@ -48,9 +63,9 @@
         <div id="nav">
 
             <div>
-                <img src="./Updated.logo.jpg" alt="">
+                <img src="./new.png" alt="">
             </div>
-            <!-- <select name="" id="select1">
+            <select name="" id="select1">
 
                 <option value="More traval">More traval</option>
                 <option value="Stays">Stays</option>
@@ -62,18 +77,18 @@
                 <option value="Deals">Deals</option>
                 <option value="Groups & meetings">Groups & meetings</option>
                 <option value="Mobile">Mobile</option>
-            </select> -->
+            </select>
 
 
 
         </div>
 
         <div id="nav2">
-            <a  href="">English</a>
-            
+            <a href="">English</a>
+
             <a id="support" href="support.html">Support</a>
-            <a href="Trips.html">Trips</a>
-            <a href="Signinpage.html">Sign in</a>
+            <a id="trips" href="Trips.html">Trips</a>
+            <a id="signinpage" href="Signinpage.html">Sign in</a>
 
 
         </div>

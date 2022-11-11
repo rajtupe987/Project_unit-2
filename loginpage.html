@@ -7,6 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in page</title>
     <style>
+          #container {
+            display: flex;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            gap: 80px;
+        }
+
+        #container>#nav>div>img {
+            width: 50%;
+
+            margin-left: 180%;
+        }
+
+        #nav {
+            display: flex;
+            gap: 20px;
+
+
+        }
         form {
             height: auto;
             width: 20%;
@@ -21,7 +39,7 @@
         }
 
     
-       form>h3 {
+       form>h2 {
             text-align: center;
         }
         
@@ -29,22 +47,41 @@
         form>input{
           width: 90%;
           gap: 20px;
-          padding: 2%;
+          padding: 3%;
           margin-bottom: 20px;
+          border-radius: 5px;
         }
         form>input[type="submit"]{
            margin-left: 9px;
             color: white;
-            background-color: blue;
+            background-color: rgb(49, 49, 250);
             border: none;
            
-            padding: 10px 40px 10px 40px;
+            padding: 4%;
+        }
+        form>input[type="submit"]:hover{
+            background-color: blue;
         }
     </style>
 </head>
 <body>
+     <!-- nav bar -->
+     <div id="container">
+        <div id="nav">
+
+            <div>
+                <img src="./new.png" alt="">
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
     <form action="">
-        <h3>Login Page</h3>
+        <h2>Login Page</h2>
 
         <input id="email" type="email" placeholder="enter email">
         <input id="pas" type="password" placeholder="enter password">

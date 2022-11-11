@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tripspage</title>
     <style>
-          /* nav bar */
-          #container {
+        /* nav bar */
+        #container {
             display: flex;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            gap: 80px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+            gap: 320px;
         }
 
         #container>#nav>div>img {
-            width: 20%;
-           
+            width: 80%;
+
             margin-left: 20px;
         }
 
         #nav {
             display: flex;
-            gap: 20px;
+            gap: 1px;
+
+
+
         }
-        
-        /* #select1 {
+
+        #nav>div {
+            height: auto;
+            width: 50%;
+
+        }
+
+        #select1 {
             border: none;
             width: 128px;
             font-size: 20px;
-            
+            margin-left: 15px;
 
-        } */
+        }
 
         #nav2 {
             display: flex;
@@ -39,18 +49,226 @@
             padding-top: 35px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
+
+        }
+
+        #container>#nav2>a {
+            color: black;
+        }
+
+        #accpage {
+            height: auto;
+            width: 40%;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #accpage>#clickcreateacc {
+            height: 100px;
+            width: 80%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+            margin: auto;
+            margin-top: 10px;
+            padding: 2%;
+            border-radius: 10px;
+        }
+
+        #accpage>img {
+            margin: auto;
+        }
+
+        /* QR page */
+        #Qrpage {
+            display: flex;
+            height: 395px;
+            width: 95%;
+            margin: auto;
+            margin-top: 170px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+        }
+
+        #Qrpage>div {
+            height: auto;
+            width: 70%;
+
+
+
+
+        }
+
+        #Qrpage>div>img {
+            width: 95%;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+
+
+
+        }
+
+        #Qrpage>#dis:nth-child(2) {
+            width: 70%;
+
+            margin-bottom: 30px;
+
+
+        }
+
+        #Qrpage>div:nth-child(3) {
+            width: 20%;
+            margin-top: 20px;
+
+        }
+
+        #Qrpage>div:nth-child(3)>p {
+
+            margin-left: 8px;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+
+        }
+
+        #Qrpage>#dis>input {
+            padding: 3%;
+            border-radius: 10px;
+        }
+
+        #Qrpage>div>#select2 {
+            padding: 3%;
+            border-radius: 10px;
+        }
+
+        #Qrpage>div>button {
+            padding: 18px 35px 17px 35px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(54, 54, 243);
+            font-size: 20px;
+            border: none;
+        }
+
+        #Qrpage>div>button:hover {
+            background-color: rgb(0, 0, 255);
+        }
+
+        #getapp>#select2 {
+            padding: 15px 30px 15px 20px;
+
+        }
+
+        #suggetion {
+            height: 200px;
+            width: 30%;
+
+            margin-left: 2.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+             /* cominfo page */
+             #cominfo {
+            height: 400px;
+            width: 95%;
+      
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(auto);
+            margin: auto;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 30px;
+            padding: 1%;
+        }
+
+        #cominfo>div:nth-child(1) {
+            height: 70px;
+            width: 60%;
+
+            margin-top: 14px;
+        }
+
+        #cominfo>div>img {
+            width: 110%;
+        }
+
+        #cominfo>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 250px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(3) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 400px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(4) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 200px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(5) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 300px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div>a {
+            color: rgb(88, 88, 231);
+        }
+        #securityimg>img {
+            height: 80px;
+            width: 15%;
+
+            margin-top: 30px;
+            margin-left: 42%;
+        }
+
+        #securityimg>p {
+            height: 20px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 100px;
+            color: rgb(78, 78, 78);
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
         }
 
     </style>
 </head>
+
 <body>
     <div id="container">
         <div id="nav">
 
             <div>
-                <img src="./Updated.logo.jpg" alt="">
+                <img src="./new.png" alt="">
             </div>
-            <!-- <select name="" id="select1">
+            <select name="" id="select1">
 
                 <option value="More traval">More traval</option>
                 <option value="Stays">Stays</option>
@@ -62,23 +280,114 @@
                 <option value="Deals">Deals</option>
                 <option value="Groups & meetings">Groups & meetings</option>
                 <option value="Mobile">Mobile</option>
-            </select> -->
+            </select>
 
 
 
         </div>
 
         <div id="nav2">
-            <a  href="">English</a>
-            
+            <a href="">English</a>
+
             <a id="support" href="support.html">Support</a>
-            <a href="Trips.html">Trips</a>
-            <a href="Signinpage.html">Sign in</a>
+            <a id="trips" href="Trips.html">Trips</a>
+            <a id="signinpage" href="Signinpage.html">Sign in</a>
 
 
         </div>
 
     </div>
-    
+    </div>
+    </div>
+
+    <div id="accpage">
+        <h1>Trips</h1>
+        <img src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" />
+        <button><a href="Signinpage.html">Sign in or create free account</a></button>
+        <div id="clickcreateacc">
+            <h3>Don’t have an account?</h3>
+            <p>Use your itinerary number and email to find a booking</p>
+        </div>
+    </div>
+
+    <div id="Qrpage">
+
+        <div>
+            <img src="https://a.travel-assets.com/mad-service/footer/bnaBanners/BEX_ROME_iStock_72dpi.jpg" />
+        </div>
+
+        <div id="dis">
+            <h2>Our app takes you further</h2>
+            <p>When you book on the app you can save even more up to 20% on select hotels while earning double the
+                points with every booking. With these app deals you'll save even more on trips, and that means you can
+                take more trips, and manage it all on the go.</p>
+            <h3>Text yourself a download link for easy access</h3>
+            <select name="" id="select2">
+                <option value="">India +91</option>
+            </select>
+            <input type="number" placeholder="Number">
+            <button>Get the app</button>
+            <p>By providing your number, you agree to receive a one-time automated text message with a link to get the
+                app. Standard text message rates may apply.</p>
+        </div>
+
+        <div>
+            <img src="https://a.travel-assets.com/mad-service/qr-code/footer_qr_hp/27_QR_FOOTER_BNA_HP.png" />
+            <p>Scan the QR code</p>
+        </div>
+    </div>
+
+    <div id="cominfo">
+
+        <div>
+            <img src="./travally group.png" />
+        </div>
+        <div>
+            <h3>Company</h3>
+            <a href="">About us</a>
+            <a href="">Jobs</a>
+            <a href="">List your property</a>
+            <a href="">Partnerships</a>
+        </div>
+        <div>
+            <h3>Explore</h3>
+            <a href="">India travel guide</a>
+            <a href="">Hotels in India</a>
+            <a href="">Holiday rentals in India</a>
+            <a href="">Holiday packages in India</a>
+            <a href="">Domestic flights</a>
+            <a href="">Car hire in India</a>
+            <a href="">All accommodation types</a>
+            <a href="">Travel blog</a>
+        </div>
+        <div>
+            <h3>Policies</h3>
+            <a href="">Privacy Statement</a>
+            <a href="">Terms of use</a>
+            <a href="">Vrbo terms and conditions</a>
+
+        </div>
+        <div>
+            <h3>Help</h3>
+            <a href="">Support</a>
+            <a href="">Change or cancel your booking</a>
+            <a href="">Refund process and timelines</a>
+            <a href="">Book a flight using an airline credit</a>
+            <a href="">International travel documents</a>
+        </div>
+
+    </div>
+
+    <div id="securityimg">
+
+        <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" />
+        <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are
+            trademarks or registered trademarks of Expedia, Inc.</p>
+    </div>
+
+
+
+
 </body>
+
 </html>

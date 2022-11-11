@@ -13,32 +13,43 @@
     </script> -->
     <style>
         /* nav bar */
+
+        button{
+            cursor: pointer;
+        }
         #container {
             display: flex;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            gap: 80px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+            gap: 320px;
         }
 
         #container>#nav>div>img {
-            width: 20%;
+            width: 80%;
 
             margin-left: 20px;
         }
 
         #nav {
             display: flex;
-            gap: 20px;
+            gap: 1px;
+
 
 
         }
 
-        /* #select1 {
+        #nav>div {
+            height: auto;
+            width: 50%;
+
+        }
+
+        #select1 {
             border: none;
             width: 128px;
             font-size: 20px;
-            
+            margin-left: 15px;
 
-        } */
+        }
 
         #nav2 {
             display: flex;
@@ -47,7 +58,14 @@
             padding-top: 35px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
+
         }
+
+        #container>#nav2>a {
+            color: black;
+        }
+
+
 
         /* Search bar */
         #Searchbar {
@@ -138,6 +156,10 @@
             background-color: rgb(0, 29, 249);
         }
 
+        #Searchbar>div>div>a{
+            color: black;
+        }
+
         /* rewardbar */
         #rewardpage {
 
@@ -219,6 +241,7 @@
             border-top-left-radius: 10px;
 
 
+
         }
 
         #Qrpage>#dis:nth-child(2) {
@@ -258,9 +281,13 @@
             padding: 18px 35px 17px 35px;
             border-radius: 10px;
             color: white;
-            background-color: blue;
+            background-color: rgb(54, 54, 243);
             font-size: 20px;
             border: none;
+        }
+
+        #Qrpage>div>button:hover {
+            background-color: rgb(0, 0, 255);
         }
 
         #getapp>#select2 {
@@ -333,7 +360,7 @@
             margin: auto;
             margin-top: 40px;
         }
-         
+
         /* ad page */
         #ad {
             display: flex;
@@ -374,7 +401,7 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(auto);
-           
+
             margin: auto;
         }
 
@@ -383,7 +410,7 @@
             width: 100%;
             margin-top: 70px;
             border-radius: 10px;
-            
+
         }
 
         #bottom-text {
@@ -395,7 +422,7 @@
             font-size: 20px;
         }
 
-        #bottom-text1{
+        #bottom-text1 {
             position: absolute;
             bottom: 8px;
             left: 16px;
@@ -406,107 +433,116 @@
 
         }
 
-        #Normaltext{
-            height: 80px ;
+        #Normaltext {
+            height: 80px;
             width: 25%;
             margin: auto;
             font-family: Arial, Helvetica, sans-serif;
             padding: 2%;
         }
 
-        #Normaltext>p{
-            height: 20px ;
+        #Normaltext>p {
+            height: 20px;
             width: 100%;
-         
+
             margin-bottom: 20px;
         }
 
-       #Normaltext>p:nth-child(2){
-        color: blue;
-       }
-     
-       /* cominfo page */
-       #cominfo{
-        height: 400px;
-        width: 95%;
-        box-shadow: rgba(5, 5, 5, 0.1) 0px 2px 0px;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(auto);
-        margin: auto;
-        gap: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 80px;
-        padding: 1%;
-       }
-       #cominfo>div:nth-child(1){
-        height: 70px;
-        width: 60%;
-       
-        margin-top: 14px;
-       }
-       #cominfo>div:nth-child(2){
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-        height: 250px;
-        width: 100%;
-     
-        font-size: 15px;
-       }
-       #cominfo>div:nth-child(3){
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-        height: 400px;
-        width: 100%;
-       
-        font-size: 15px;
-       }
-       #cominfo>div:nth-child(4){
-         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-        height:200px;
-        width: 100%;
-       
-        font-size: 15px;
-       }
-       #cominfo>div:nth-child(5){
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-        height: 300px;
-        width: 100%;
-       
-        font-size: 15px;
-       }
-       #cominfo>div>a{
-        color: blue;
-       }
-       #securityimg>img{
-        height: 80px;
-        width: 15%;
-       
-        margin-top: 30px;
-        margin-left: 42%;
-       }
-       #securityimg>p{
-        height: 20px;
-        width: 100%;
-        font-family: Arial, Helvetica, sans-serif;
-         text-align: center;
-         margin-bottom: 100px;
-         color: rgb(78, 78, 78);
-         font-size: 15px;
-       }
-       a{
-        text-decoration: none;
-       }
-     
+        #Normaltext>p:nth-child(2) {
+            color: blue;
+        }
 
+        /* cominfo page */
+        #cominfo {
+            height: 400px;
+            width: 95%;
+            box-shadow: rgba(5, 5, 5, 0.1) 0px 2px 0px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(auto);
+            margin: auto;
+            gap: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 80px;
+            padding: 1%;
+        }
 
+        #cominfo>div:nth-child(1) {
+            height: 70px;
+            width: 60%;
 
+            margin-top: 14px;
+        }
+
+        #cominfo>div>img {
+            width: 110%;
+        }
+
+        #cominfo>div:nth-child(2) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 250px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(3) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 400px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(4) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 200px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div:nth-child(5) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10px;
+            height: 300px;
+            width: 100%;
+
+            font-size: 15px;
+        }
+
+        #cominfo>div>a {
+            color: blue;
+        }
+
+        #securityimg>img {
+            height: 80px;
+            width: 15%;
+
+            margin-top: 30px;
+            margin-left: 42%;
+        }
+
+        #securityimg>p {
+            height: 20px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 100px;
+            color: rgb(78, 78, 78);
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -517,9 +553,9 @@
         <div id="nav">
 
             <div>
-                <img src="./Updated.logo.jpg" alt="">
+                <img src="./new.png" alt="">
             </div>
-            <!-- <select name="" id="select1">
+            <select name="" id="select1">
 
                 <option value="More traval">More traval</option>
                 <option value="Stays">Stays</option>
@@ -531,7 +567,7 @@
                 <option value="Deals">Deals</option>
                 <option value="Groups & meetings">Groups & meetings</option>
                 <option value="Mobile">Mobile</option>
-            </select> -->
+            </select>
 
 
 
@@ -698,7 +734,7 @@
     <div id="discount">
 
         <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" />
-         <h2 id="bottom-text1">Plane ahead and save</h2> 
+        <h2 id="bottom-text1">Plane ahead and save</h2>
         <h3 id="bottom-text">Book 60 days in advance for 20% off select stays.</h3>
 
     </div>
@@ -711,7 +747,7 @@
     <div id="cominfo">
 
         <div>
-            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"/>
+            <img src="./travally group.png" />
         </div>
         <div>
             <h3>Company</h3>
@@ -736,7 +772,7 @@
             <a href="">Privacy Statement</a>
             <a href="">Terms of use</a>
             <a href="">Vrbo terms and conditions</a>
-            
+
         </div>
         <div>
             <h3>Help</h3>
@@ -751,10 +787,11 @@
 
     <div id="securityimg">
 
-        <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png"/>
-        <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are trademarks or registered trademarks of Expedia, Inc.</p>
+        <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" />
+        <p>© 2022 Expedia, Inc., an Expedia Group company. All rights reserved. Expedia and the Airplane Logo are
+            trademarks or registered trademarks of Expedia, Inc.</p>
     </div>
-    
+
 
 </body>
 
