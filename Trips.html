@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
     <title>tripspage</title>
+    
     <style>
         /* nav bar */
         #container {
@@ -39,7 +41,7 @@
             width: 128px;
             font-size: 20px;
             margin-left: 15px;
-
+            cursor: pointer;
         }
 
         #nav2 {
@@ -253,15 +255,50 @@
             color: rgb(78, 78, 78);
             font-size: 15px;
         }
-
+        
         a {
             text-decoration: none;
         }
+        #accpage>button{
+            padding: 2%;
+            width: 85%;
+            margin-left: 40px;
+            border-radius: 10px;
+            background-color: rgb(51, 51, 255);
+            color: white;
+            border: none;
+            margin-top: 70px;
+        }
+        #accpage>button>a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+        }
+        #accpage>#clickcreateacc{
+            margin-top: 30px;
+
+        }
+        #accpage>h1{
+           margin-left: 40px;
+           font-family: Arial, Helvetica, sans-serif;
+
+        }
+        i{
+            margin-right: 50px;
+            font-size: 23px;
+          
+        }
+        i:hover{
+            color: blue;
+        }
+        
 
     </style>
 </head>
 
 <body>
+    <!-- nav bar -->
     <div id="container">
         <div id="nav">
 
@@ -291,7 +328,7 @@
 
             <a id="support" href="support.html">Support</a>
             <a id="trips" href="Trips.html">Trips</a>
-            <a id="signinpage" href="Signinpage.html">Sign in</a>
+            <a id="signinpage" href="Signinpage.html"><i class="fa-solid fa-bell"></i>Sign in</a>
 
 
         </div>
@@ -299,17 +336,19 @@
     </div>
     </div>
     </div>
-
+      
+    <!-- Account Page -->
     <div id="accpage">
         <h1>Trips</h1>
         <img src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" />
-        <button><a href="Signinpage.html">Sign in or create free account</a></button>
+        <button ><a href="Signinpage.html">Sign in or create free account</a></button>
         <div id="clickcreateacc">
             <h3>Don’t have an account?</h3>
             <p>Use your itinerary number and email to find a booking</p>
         </div>
     </div>
-
+   
+    <!-- QR page -->
     <div id="Qrpage">
 
         <div>
@@ -336,7 +375,7 @@
             <p>Scan the QR code</p>
         </div>
     </div>
-
+     <!-- company info -->
     <div id="cominfo">
 
         <div>
@@ -377,7 +416,8 @@
         </div>
 
     </div>
-
+    
+    <!-- company trust -->
     <div id="securityimg">
 
         <img src="https://images.trvl-media.com/media/content/expind/images/sg/secure.png" />

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
     <title>Travally</title>
 
     <!-- <script src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
@@ -48,7 +48,7 @@
             width: 128px;
             font-size: 20px;
             margin-left: 15px;
-
+            cursor: pointer;
         }
 
         #nav2 {
@@ -102,12 +102,15 @@
             margin-left: px;
             text-decoration: none;
             margin: auto;
+            
 
         }
 
         #Searchbar2>input {
             border-radius: 10px;
             width: 100%;
+            padding: 1%;
+            font-size: 20px;
         }
 
         #Searchbar>#Searchbar2 {
@@ -132,6 +135,7 @@
             font-size: 20px;
 
         }
+      
 
         #Searchbar4 {
             height: 30px;
@@ -542,13 +546,23 @@
 
         a {
             text-decoration: none;
+        
+        }
+        i{
+            margin-right: 50px;
+            font-size: 23px;
+        }
+        i:hover{
+            color: blue;
+        }
+        a:hover{
+        color: blue;
         }
     </style>
 </head>
 
 <body>
 
-    <i class="fas fa-band-aid"></i>
     <div id="container">
         <div id="nav">
 
@@ -578,7 +592,7 @@
 
             <a id="support" href="support.html">Support</a>
             <a id="trips" href="Trips.html">Trips</a>
-            <a id="signinpage" href="Signinpage.html">Sign in</a>
+            <a id="signinpage" href="Signinpage.html"><i class="fa-solid fa-bell"></i>Sign in</a>
 
 
         </div>
@@ -598,6 +612,7 @@
         </div>
 
         <div id="Searchbar2">
+           
             <input type="text" placeholder="Going to">
             <input type="date" placeholder="Check-in">
             <input type="date" placeholder="check-out">
