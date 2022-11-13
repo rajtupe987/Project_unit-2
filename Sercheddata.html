@@ -6,17 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/70e0f6f431.js" crossorigin="anonymous"></script>
-    <title>Travally</title>
-
-    <!-- <script src="https://www.expedia.co.in/_dms/header/logo.svg?locale=en_GB&siteid=27&2">
-
-    </script> -->
+    <title>Search Page</title>
     <style>
         /* nav bar */
 
-        button{
+        button {
             cursor: pointer;
         }
+
         #container {
             display: flex;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
@@ -65,16 +62,34 @@
             color: black;
         }
 
+        a {
+            text-decoration: none;
 
+        }
+
+        i {
+            margin-right: 50px;
+            font-size: 23px;
+        }
+
+        i:hover {
+            color: blue;
+        }
+
+        a:hover {
+            color: blue;
+        }
 
         /* Search bar */
         #Searchbar {
-            height: 330px;
-            width: 95%;
+            height: 250px;
+            width: 100%;
             margin: auto;
             border: 1px solid rgb(215, 215, 215);
-            border-radius: 10px;
+            border: none;
             margin-top: 50px;
+            background-color: rgb(232, 232, 232);
+            padding: 1%;
 
         }
 
@@ -85,6 +100,7 @@
             width: 97%;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
             margin: auto;
+
         }
 
         #Searchbar>#Searchbar1>div {
@@ -102,7 +118,7 @@
             margin-left: px;
             text-decoration: none;
             margin: auto;
-            
+
 
         }
 
@@ -128,108 +144,66 @@
             height: auto;
             width: 50%;
             font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            gap: 30px;
+
             margin-top: 25px;
             margin-left: 4%;
             font-size: 20px;
+            margin-top: 20px;
 
         }
-        #Searchbar4>button>a{
+
+        #Searchbar4>button>a {
             color: white;
         }
-      
 
-        #Searchbar4 {
-            height: 30px;
-            width: 10%;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: auto;
-            margin-top: 15px;
-
-        }
-
-        #Searchbar4>#btn1 {
-            padding: 15px 50px 15px 50px;
-            border-radius: 9px;
-            font-size: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(67, 67, 243);
-            color: white;
+        #Searchbar4>button {
+            margin-left: 5%;
+            padding: 20px 85px 15px 90px;
+            background-color: blue;
+            margin-top: 20px;
+            border-radius: 10px;
             border: none;
         }
 
-        #Searchbar4>#btn1:hover {
-            background-color: rgb(0, 29, 249);
-        }
-
-        #Searchbar>div>div>a{
+        #Searchbar>#Searchbar1>div>a {
             color: black;
         }
 
-        /* rewardbar */
-        #rewardpage {
-
-            height: auto;
-            width: 95%;
-            margin: 90px auto;
-            border-radius: 10px;
-            color: white;
-            position: relative;
-        }
-
-        #rewardpage>img {
-            width: 100%;
-            border-radius: 10px;
-
-        }
-
-        #bottom-left {
-            position: absolute;
-            top: 8px;
-            left: 16px;
-            color: white;
-
-            width: 30%;
+        #choosestay {
+            display: flex;
+            gap: 20px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 60px;
-            margin-left: 70px;
-
-        }
-
-        #bottom-up {
-            position: absolute;
-            bottom: 8px;
-            left: 16px;
-            width: 35%;
-            margin-left: 70px;
-            margin-bottom: 15%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #bottom-btn {
-            position: absolute;
-            bottom: 8px;
-            left: 16px;
-            margin-left: 70px;
-            margin-bottom: 8%;
-            padding: 20px 15px 20px 15px;
-            border-radius: 10px;
-            background-color: blue;
-            color: white;
-            font-size: 25px;
+            background-color: rgb(232, 232, 232);
             border: none;
 
         }
 
-        /* QR page */
-        #Qrpage {
+        #choosestay>p {
+            margin-left: 50px;
+            border: none;
+        }
+        #filter{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 20px;
+        }
+        #filter>div>img{
+         
+            width: 30%;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+        #filter:nth-child(1){
+            border: 1px solid black;
+        }
+               /* QR page */
+               #Qrpage {
             display: flex;
             height: 395px;
-            width: 95%;
+            width: 98%;
             margin: auto;
             border-radius: 20px;
             box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-top: 20px;
 
         }
 
@@ -309,156 +283,7 @@
             margin-left: 2.5%;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        /* Box page */
-
-        #boxes {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(auto);
-            gap: 20px;
-            height: auto;
-            width: 95%;
-            margin-bottom: 10px;
-            margin: auto;
-
-        }
-
-        #boxes>div {
-
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-            border-radius: 10px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        #boxes>div>img {
-            width: 100%;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-
-        #boxes>div>h4 {
-            margin-left: 10px;
-
-        }
-
-        #boxes>div>h2 {
-            margin-left: 198px;
-
-        }
-
-        #boxes>div>p {
-            margin-left: 30px;
-            margin-top: 20px;
-            color: rgb(93, 93, 93);
-        }
-
-        #properties {
-            margin-left: 35px;
-            margin-top: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-
-        #exbox {
-            height: 90px;
-            width: 71%;
-
-            margin: auto;
-            margin-top: 40px;
-        }
-
-        /* ad page */
-        #ad {
-            display: flex;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            width: 95%;
-            height: auto;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-            margin: auto;
-            margin-top: 70px;
-            border-radius: 10px;
-        }
-
-        #ad>div {
-            height: 100%;
-            width: 46%;
-
-        }
-
-        #ad>div>img {
-            height: 200px;
-            width: 90%;
-            border-bottom-left-radius: 10px;
-            border-top-left-radius: 10px;
-
-        }
-
-        #ad>div:nth-child(2) {
-            margin-top: 20px;
-        }
-
-
-        /* discountpage */
-        #discount {
-            position: relative;
-            height: auto;
-            width: 95%;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(auto);
-
-            margin: auto;
-        }
-
-        #discount>img {
-            height: 350px;
-            width: 100%;
-            margin-top: 70px;
-            border-radius: 10px;
-
-        }
-
-        #bottom-text {
-            position: absolute;
-            bottom: 8px;
-            left: 16px;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-
-        #bottom-text1 {
-            position: absolute;
-            bottom: 8px;
-            left: 16px;
-            color: white;
-            margin-bottom: 4.5%;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-
-        }
-
-        #Normaltext {
-            height: 80px;
-            width: 25%;
-            margin: auto;
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 2%;
-        }
-
-        #Normaltext>p {
-            height: 20px;
-            width: 100%;
-
-            margin-bottom: 20px;
-        }
-
-        #Normaltext>p:nth-child(2) {
-            color: blue;
-        }
-
+        
         /* cominfo page */
         #cominfo {
             height: 400px;
@@ -547,25 +372,10 @@
             font-size: 15px;
         }
 
-        a {
-            text-decoration: none;
-        
-        }
-        i{
-            margin-right: 50px;
-            font-size: 23px;
-        }
-        i:hover{
-            color: blue;
-        }
-        a:hover{
-        color: blue;
-        }
     </style>
 </head>
 
 <body>
-
     <div id="container">
         <div id="nav">
 
@@ -601,9 +411,8 @@
         </div>
 
     </div>
-
     <div id="Searchbar">
-        <div id="Searchbar1">
+        <!-- <div id="Searchbar1">
             <div>
                 <a href="">Stays</a>
                 <a href="">Flights</a>
@@ -612,10 +421,10 @@
                 <a href="">Things to do</a>
 
             </div>
-        </div>
+        </div> -->
 
         <div id="Searchbar2">
-           
+
             <input type="text" placeholder="Going to">
             <input type="date" placeholder="Check-in">
             <input type="date" placeholder="check-out">
@@ -626,11 +435,11 @@
 
             <div>
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Biryani">
-                <label for="vehicle1"> Add a flight</label><br>
+                <label for="vehicle1"> Direct flights only</label><br>
             </div>
             <div>
                 <input type="checkbox" id="vehicle1" name="vehicle1" value="Biryani">
-                <label for="vehicle1"> Add a car</label><br>
+                <label for="vehicle1"> I only need accommodation for part of my trip</label><br>
             </div>
 
 
@@ -646,18 +455,109 @@
 
     </div>
 
-    <div id="rewardpage">
-
-
-        <img src="https://a.travel-assets.com/travel-assets-manager/cmct-5255/POSa-HP-Hero-D-928x398.jpg" alt="">
-        <!-- <div id="bottom-left">Save instantly with Expedia Rewards</div> -->
-        <p id="bottom-left">Save instantly with Expedia Rewards</p>
-        <!-- <div id="bottom-up">You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of hotels. Terms may apply.</div> -->
-        <p id="bottom-up">You can enjoy access to perks like Member Prices, saving an average of 15% on thousands of
-            hotels. Terms may apply.</p>
-        <button id="bottom-btn">See Member Prices</button>
+    <div id="choosestay">
+        <p>Choose your stay ></p>
+        <p>Choose departing flight ></p>
+        <p>Choose returning flight ></p>
+        <p>Choose your car ></p>
     </div>
 
+    <div id="filter">
+        <div>
+            <img
+                src="https://maps.googleapis.com/maps/api/staticmap?channel=expedia-HotelInformation&maptype=roadmap&format=jpg&zoom=&size=600x400&center=18.520433,73.856737&key=AIzaSyCYjQus5kCufOpSj932jFoR_AJiL9yiwOw&signature=yP-C3Cg67oPIEiqBsAnfEC0dB3I=" />
+            <p>View in a map</p>
+        </div>
+
+        <h3>Filter by</h3>
+        <div>
+            <h4>Property cancellation options</h4>
+            <input type="checkbox" id="refundable" name="refundable" value="refundable">
+            <label for="refundable">Fully refundable property</label><br>
+        </div>
+        <div>
+            <h4>Popular filters</h4>
+            <input type="checkbox" id="refundable" name="refundable" value="refundable">
+            <label for="refundable">Breakfast included</label><br>
+            <input type="checkbox">
+            <label for="refundable">Spa</label><br>
+            <input type="checkbox">
+            <label for="refundable">Pool</label><br>
+            <input type="checkbox">
+            <label for="refundable">Hot tub</label><br>
+            <input type="checkbox">
+            <label for="refundable">Shivajinagar</label><br>
+
+
+        </div>
+        <div>
+            <h4>Guest rating</h4>
+            <input type="checkbox" id="refundable" name="refundable" value="refundable">
+            <label for="refundable">Any</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Wonderful 4.5+</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Very good 4+</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Good 3.5+</label><br>
+
+        </div>
+        <div>
+            <h4>Property type</h4>
+
+
+            <input type="checkbox">
+            <label for="refundable">
+                House boat</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Cabin</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Cottage</label><br>
+
+        </div>
+        <div>
+            <h4>Area</h4>
+         <input type="checkbox">
+         <label for="refundable">Pune</label><br>
+         <input type="checkbox">
+         <label for="refundable">Shivajinagar</label><br>
+         <input type="checkbox">
+         <label for="refundable">Viman Nagar</label><br>
+         
+        </div>
+        <div>
+            <h4>Popular locations</h4>
+
+
+            <input type="checkbox">
+            <label for="refundable">Balewadi High Street</label><br>
+            <input type="checkbox">
+            <label for="refundable">Shreemant Dagdusheth Halwai Ganpat</label><br>
+            <input type="checkbox">
+            <label for="refundable">anshet Dam</label><br>
+        </div>
+        <div>
+            <h4>Meal plans available</h4>
+
+
+            <input type="checkbox">
+            <label for="refundable">
+                Breakfast included</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Lunch included</label><br>
+            <input type="checkbox">
+            <label for="refundable">
+                Dinner included</label><br>
+        </div>
+        </div>
+     
+    </div>
     <div id="Qrpage">
 
         <div>
@@ -684,84 +584,6 @@
             <p>Scan the QR code</p>
         </div>
     </div>
-
-    <div id="suggetion">
-        <h1>Suggestions for you</h1>
-        <h3>Popular Pune stays</h3>
-        <p>These are the most-viewed stays in Pune.</p>
-    </div>
-
-    <div id="boxes">
-        <div>
-            <img
-                src="https://mediaim.expedia.com/hotels/4000000/3910000/3900400/3900351/9466ad75_w.jpg?impolicy=fcrop&w=357&h=201&p=1&q=medium" />
-            <h4>Hyatt Pune</h4>
-            <h4>4.1/5 Very good(277 reviews)</h4>
-            <h2>₹6,525</h2>
-            <p>for one night(22 Nov-23 Nov)</p>
-        </div>
-
-        <div>
-            <img
-                src="https://mediaim.expedia.com/hotels/5000000/4200000/4190700/4190639/addeb071_w.jpg?impolicy=fcrop&w=357&h=201&p=1&q=medium" />
-            <h4>Four points by sheraton Hotel and Serviced apartments Viaman Nagar,pune</h4>
-            <h4>4.1/5 Very good(177 reviews)</h4>
-            <h2>₹6,493</h2>
-            <p>for one night(22 Nov-23 Nov)</p>
-        </div>
-        <div>
-            <img
-                src="https://mediaim.expedia.com/hotels/31000000/30680000/30676300/30676271/d4daff28_w.jpg?impolicy=fcrop&w=357&h=201&p=1&q=medium" />
-            <h4>Lamon Tree Premier City Center Pune</h4>
-            <h4>₹4.3/4 Very good(13 reviews)</h4>
-            <h2>₹5,295</h2>
-            <p>for one night(22 Nov-23 Nov)</p>
-        </div>
-        <div>
-            <img
-                src="https://mediaim.expedia.com/hotels/5000000/4540000/4532900/4532832/9f9ebcdb_w.jpg?impolicy=fcrop&w=357&h=201&p=1&q=medium" />
-            <h4>The Orchid Hotel pune Hinjewadi</h4>
-            <h4>3.4/5 Very good(167 reviews)</h4>
-            <h2>₹5,099</h2>
-            <p>for one night(22 Nov-23 Nov)</p>
-        </div>
-    </div>
-    <div id="properties">
-        <a href="">See All Properties -></a>
-    </div>
-
-    <div id="ad">
-        <div>
-            <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiviz6-oi_OLErhZF-U5pK4PHUZLr-JkbVPeNcwBh5AahnWBvEHbzllpSzf-XP6oIN4RE&usqp=CAU" />
-
-        </div>
-        <div>
-
-            <h2>Discover USA</h2>
-            <p>From beaches and national parks to iconic big city,The USA awaits for you.</p>
-        </div>
-
-
-    </div>
-
-    <div id="exbox">
-        <img src="https://tpc.googlesyndication.com/simgad/4477719789317755579?" />
-    </div>
-
-    <div id="discount">
-
-        <img src="https://a.travel-assets.com/travel-assets-manager/gmvd-1482-bookearly-emea/667x320.jpg" />
-        <h2 id="bottom-text1">Plane ahead and save</h2>
-        <h3 id="bottom-text">Book 60 days in advance for 20% off select stays.</h3>
-
-    </div>
-
-    <div id="Normaltext">
-        <p>Explore a world of travel with Expedia</p>
-        <p>Discover new places and experiences</p>
-    </div>
-
     <div id="cominfo">
 
         <div>
@@ -814,8 +636,3 @@
 </body>
 
 </html>
-
-<script>
-
-
-</script>
